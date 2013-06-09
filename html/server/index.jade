@@ -11,6 +11,7 @@ html.no-js
     //
        Place favicon.ico and apple-touch-icon.png in the root directory 
     link(rel='stylesheet', href='styles/main.css')
+    script(src='components/foundation/js/vendor/custom.modernizr.js')
     script(src='/reload/reload.js')
     script
       document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js"></' + 'script>')
@@ -26,20 +27,37 @@ html.no-js
       script(src='components/es5-shim/es5-shim.js')
       script(src='components/json3/lib/json3.min.js')
     //
-       Add your site or application content here 
+
     .container(ng-view='ng-view')
+
+
     script(src='components/angular/angular.js')
     script(src='components/angular-resource/angular-resource.js')
     script(src='components/angular-cookies/angular-cookies.js')
     script(src='components/angular-sanitize/angular-sanitize.js')
-    //
-       build:js scripts/scripts.js 
+
+    script(src='components/foundation/js/vendor/jquery.js')
+    script(src='components/foundation/js/foundation/foundation.js')
+    script(src='components/foundation/js/foundation/foundation.alerts.js')
+    script(src='components/foundation/js/foundation/foundation.clearing.js')
+    script(src='components/foundation/js/foundation/foundation.cookie.js')
+    script(src='components/foundation/js/foundation/foundation.dropdown.js')
+    script(src='components/foundation/js/foundation/foundation.forms.js')
+    script(src='components/foundation/js/foundation/foundation.joyride.js')
+    script(src='components/foundation/js/foundation/foundation.magellan.js')
+    script(src='components/foundation/js/foundation/foundation.orbit.js')
+    script(src='components/foundation/js/foundation/foundation.placeholder.js')
+    script(src='components/foundation/js/foundation/foundation.reveal.js')
+    script(src='components/foundation/js/foundation/foundation.section.js')
+    script(src='components/foundation/js/foundation/foundation.tooltips.js')
+    script(src='components/foundation/js/foundation/foundation.topbar.js')
+
     script(src='scripts/app.js ')
     script(src='scripts/controllers/main.js')
-    //
-       endbuild 
-    //
-       Google Analytics: change UA-XXXXX-X to be your site's ID. 
+  //
+     endbuild
+  //
+     Google Analytics: change UA-XXXXX-X to be your site's ID.
     script.
       var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
       (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];

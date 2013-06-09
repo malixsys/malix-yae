@@ -10,4 +10,7 @@ angular.module('malixYaeApp', [])
       .otherwise({
         redirectTo: '/'
       });
+  })
+  .run(function($rootScope){
+    $rootScope.$apply($(document).foundation());
   });
