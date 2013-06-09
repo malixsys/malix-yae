@@ -30,18 +30,18 @@
     "express": "3.x",
     "jade": "*",
     "coffee-script": "~1.6.3",
-    "grunt-contrib-livereload": "~0.1.2",
     "reload": "0.0.2",
     "express-livereload": "0.0.24"
   },
   "devDependencies": {
     "grunt": "~0.4.1",
+    "grunt-contrib-livereload": "~0.1.2",
     "grunt-express-server": "~0.3.1",
     "grunt-regarde": "~0.1.1",
     "grunt-open": "~0.2.0",
     "matchdep": "~0.1.2",
     "grunt-nodemon": "0.0.4",
-    "grunt-concurrent": "~0.2.0"
+    "grunt-concurrent": "~0.2.0",
     "generator-express-angular": "~0.2.4"
   }
 }
