@@ -12,7 +12,7 @@
 
 - The default grunt task will start the server and watch for changes.
   - To run the default grunt task, run `grunt`
-- One should navigate to `http://localhost:8080` to see the app
+- The server starts at `http://localhost:3000` by default
 
 ### Automatic Change Monitoring
 - When changes are made to `html/server` or `lib`, the server is restarted and the page should refresh

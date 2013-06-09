@@ -25,7 +25,7 @@ app.configure ->
 app.get "/", (request, response) ->
   response.render "index"
 
-port = process.env.PORT or 8080
+port = process.env.PORT or 3000
 server = require("http").createServer(app)
 reload server, app, 1000
 
