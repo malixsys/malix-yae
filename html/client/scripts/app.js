@@ -2,7 +2,7 @@
 
 var app = angular.module('malixYaeApp', ['ngResource']);
 
-app.config(function ($routeProvider) {
+app.config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -11,6 +11,7 @@ app.config(function ($routeProvider) {
       .otherwise({
         redirectTo: '/'
       });
+      $locationProvider.html5Mode(true);
   });
 
 app.factory('PersonsService', function($resource){
