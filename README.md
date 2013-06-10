@@ -4,7 +4,7 @@
 
 ### Initial setup
 
-1. Ensure that you have [node](http://nodejs.org/) and [npm](https://npmjs.org/), [yoeman](http://yeoman.io/) installed and in your path
+1. Ensure that you have [node](http://nodejs.org/), [npm](https://npmjs.org/) and [yoeman](http://yeoman.io/) installed and in your path
 1. Clone this repository
 1. Run `npm install` to pull down all build-time dependencies
 
