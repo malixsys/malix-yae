@@ -20,10 +20,8 @@ app.configure ->
   app.use express.static(appDir)
   app.use app.router
 
-
-#app.engine('html', require('ejs').renderFile);
-app.get "/", (request, response) ->
-  response.render "index"
+routes = require(path.join(__dirname, "routes"))
+routes(app)
 
 port = process.env.PORT or 5000
 server = require("http").createServer(app)

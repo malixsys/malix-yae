@@ -1,7 +1,8 @@
 'use strict';
 
-angular.module('malixYaeApp', [])
-  .config(function ($routeProvider) {
+var app = angular.module('malixYaeApp', ['ngResource']);
+
+app.config(function ($routeProvider) {
     $routeProvider
       .when('/', {
         templateUrl: 'views/main.html',
@@ -10,7 +11,15 @@ angular.module('malixYaeApp', [])
       .otherwise({
         redirectTo: '/'
       });
-  })
-  .run(function($rootScope){
+  });
+
+app.factory('PersonsService', function($resource){
+  return $resource(
+    '/api/persons/:id',
+    {id: '@id'},
+    {update: {method: 'PUT'}});
+});
+
+app.run(function($rootScope){
     $rootScope.$apply($(document).foundation());
   });

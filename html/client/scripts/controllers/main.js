@@ -1,11 +1,8 @@
 'use strict';
 
 angular.module('malixYaeApp')
-  .controller('MainCtrl', function ($scope) {
-    $scope.awesomeThings = [
-      'angularJS',
-      'express',
-      'Reload',
-      'express-livereload'
-    ];
+  .controller('MainCtrl', function ($scope, $http, PersonsService) {
+    $scope.title = "malix-yae";
+    $scope.username = "guest@example.com"
+    $scope.persons = PersonsService.query();
   });
