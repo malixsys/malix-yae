@@ -15,8 +15,8 @@
 - The server starts at `http://localhost:5000` by default
 
 ### Automatic Change Monitoring
-- When changes are made to `html/server` or `lib`, the server is restarted and the page should refresh
-- When changes are made to *HTML* or *JS* files under `html/client`, the server is not restarted but the page should refresh
-- When changes are made to *CSS* files under `html/client`, the new stylesheet should be injected directly without refreshing
+- When changes are made to `app/server` or `lib`, the server is restarted and the page should refresh
+- When changes are made to *HTML* or *JS* files under `app/client`, the server is not restarted but the page should refresh
+- When changes are made to *CSS* files under `app/client`, the new stylesheet should be injected directly without refreshing
 
 

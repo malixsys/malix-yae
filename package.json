@@ -29,10 +29,11 @@
   },
   "dependencies": {
     "express": "3.x",
-    "jade": "*",
+    "ejs": "*",
     "coffee-script": "~1.6.3",
     "reload": "0.0.2",
-    "express-livereload": "0.0.24"
+    "express-livereload": "0.0.24",
+    "ejs-locals": "~1.0.2"
   },
   "devDependencies": {
     "grunt": "~0.4.1",

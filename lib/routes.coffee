@@ -5,7 +5,7 @@ module.exports = (app) ->
 
   #app.engine('html', require('ejs').renderFile);
   app.get "/", (request, response) ->
-    response.render "index"
+    response.render "layout"
 
   app.get('/api/persons', persons.list)
 

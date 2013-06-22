@@ -4,7 +4,7 @@ Gruntfile.js
 /.git/
 /.idea/
 /node_modules/
-/html/client
+/app/client
 /dist/
 /test/
 /temp/

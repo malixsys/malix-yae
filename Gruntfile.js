@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
   // configurable paths
   var yeomanConfig = {
-    app: 'html/client',
+    app: 'app/client',
     dist: 'dist'
   };
 
@@ -20,7 +20,7 @@ module.exports = function (grunt) {
     '/.git/',
     '/.idea/',
     '/node_modules/',
-    '/html/client',
+    '/app/client',
     '/dist/',
     '/test/',
     '/temp/',
