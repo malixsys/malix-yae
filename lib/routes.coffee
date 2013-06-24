@@ -5,7 +5,7 @@ module.exports = (app) ->
 
   #app.engine('html', require('ejs').renderFile);
   app.get "/", (request, response) ->
-    response.render "layout"
+    response.render "anonymous"
 
   app.get('/api/persons', persons.list)
 
