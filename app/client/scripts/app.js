@@ -19,13 +19,16 @@ var app = angular.module('sample', ['ui.compat'])
           .when('/user/:id', {
             redirectTo: '/animals/:id',
           })
-          .when('/', {
-            templateUrl: 'views/main.html',
-            controller: [        '$scope', '$state',
-                    function ($scope, $state) {
-                        $scope.username = "guest";
-                    }]
-          });
+
+      $stateProvider
+          .state('root', {
+              url: '/',
+              templateUrl: 'views/main.html',
+              controller: ['$scope', '$state',
+                  function ($scope,   $state) {
+                      $scope.username = "guest";
+                  }]});
+
 
         $stateProvider
           .state('animals', {
