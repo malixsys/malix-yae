@@ -1,0 +1,10 @@
+<div>
+  <h2>{{animal.name}}</h2>
+  <p class="muted">{{something}}</p>
+  <ul>
+    <li ng-repeat="item in animal.items">
+      <a href="/#/animals/{{animal.id}}/item/{{item.id}}">{{item.type}}</a>
+    </li>
+  </ul>
+  <div ui-view="" ng-animate="{enter:&#39;fade-enter&#39;}"></div>
+</div>
