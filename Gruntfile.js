@@ -44,7 +44,7 @@ module.exports = function (grunt) {
     nodemon: {
       dev: {
         options: {
-          file: 'server.js',
+          file: 'lib/app.coffee',
           args: ['development'],
           watchedExtensions: [
             'js',
